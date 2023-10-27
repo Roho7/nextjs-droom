@@ -4,10 +4,12 @@ import React from "react";
 const Hotels = () => {
   return (
     <div className="page-container">
-      Hotels{" "}
-      <Link href="/hotels/create-hotels" className="link bg-grass-500">
-        Create Hotels
-      </Link>
+      <div className="flex justify-between">
+        <h1>Hotels</h1>
+        <Link href="/hotels/create-hotels" className="link bg-grass-500">
+          Create Hotels
+        </Link>
+      </div>
     </div>
   );
 };
