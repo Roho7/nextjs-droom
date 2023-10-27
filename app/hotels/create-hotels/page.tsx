@@ -14,6 +14,7 @@ const CreateHotel = () => {
               placeholder={item.placeholder}
               label={item.label}
               incremental={item.incremental}
+              key={index}
             />
           );
         })}

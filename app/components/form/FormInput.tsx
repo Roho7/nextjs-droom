@@ -4,7 +4,10 @@ import { BiMinus, BiPlus } from "react-icons/bi";
 
 const FormInput = ({ name, placeholder, label, type, incremental }: any) => {
   const [value, setValue] = useState(0);
-  const handleIncrement = (e, operator: string) => {
+  const handleIncrement = (
+    e: React.MouseEvent<HTMLButtonElement, MouseEvent>,
+    operator: string,
+  ) => {
     e.preventDefault();
     if (operator === "add") {
       setValue(() => value + 1);
