@@ -7,9 +7,21 @@
 }
 
 input {
-  @apply border border-gray-300;
+  @apply p-2 rounded-md mb-2 w-full border-2 border-black;
+}
+
+button {
+  @apply border-2 border-black px-4 py-2 rounded-md;
+}
+
+.link {
+  @apply border-2 border-black px-4 py-2 rounded-md;
 }
 
 .page-container {
-  @apply p-10;
+  @apply p-10 w-full;
+}
+
+form {
+  @apply flex flex-col;
 }
