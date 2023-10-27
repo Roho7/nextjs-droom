@@ -1,9 +1,9 @@
-import { SideBarData } from "../config/sitedata";
+import { SideBarData } from "../../config/sitedata";
 import SidebarItem from "./SidebarItem";
 
 const Sidebar = () => {
   return (
-    <div className="bg-black text-white p-10 w-1/6 h-screen fixed">
+    <div className="bg-black text-white p-10 w-1/6 h-screen sticky left-0">
       {SideBarData.map((item, index) => {
         return <SidebarItem data={item} key={index} />;
       })}

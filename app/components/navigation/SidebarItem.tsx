@@ -1,6 +1,6 @@
 "use client";
 import { BiChevronDown } from "react-icons/bi";
-import { SideBarItemType } from "../config/types";
+import { SideBarItemType } from "../../config/types";
 import Link from "next/link";
 
 const SidebarItem = (props: any) => {
@@ -14,7 +14,7 @@ const SidebarItem = (props: any) => {
   return (
     <>
       <Link
-        className="flex justify-between py-2 cursor-pointer text-xl hover:text-yellow-500"
+        className="flex justify-between py-2 cursor-pointer text-xl hover:text-mango-500"
         onClick={() => handleDropdown(item.name)}
         href={item.path}
       >
@@ -27,10 +27,7 @@ const SidebarItem = (props: any) => {
       <div className="hidden" id={item.name}>
         {item.subpages?.map((page, idx) => {
           return (
-            <div
-              className="cursor-pointer hover:text-yellow-500 px-6"
-              key={idx}
-            >
+            <div className="cursor-pointer hover:text-mango-500 px-6" key={idx}>
               {page.name}
             </div>
           );

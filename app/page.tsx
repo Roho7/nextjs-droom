@@ -1,10 +1,5 @@
-import Link from "next/link";
-import Sidebar from "./components/Sidebar";
+import Sidebar from "./components/navigation/Sidebar";
 
 export default function Home() {
-  return (
-    <div className="flex flex-col">
-      <Sidebar />
-    </div>
-  );
+  return <div className="flex flex-col"></div>;
 }

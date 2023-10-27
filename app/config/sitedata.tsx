@@ -14,7 +14,7 @@ import {
 export const SideBarData = [
   {
     name: "Home",
-    path: "/home",
+    path: "/",
     icon: <BiHomeAlt />,
   },
   {

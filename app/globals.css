@@ -3,9 +3,13 @@
 @tailwind utilities;
 
 :root {
-  @apply w-full h-full;
+  @apply w-full h-full bg-base-100;
 }
 
 input {
   @apply border border-gray-300;
+}
+
+.page-container {
+  @apply p-10;
 }
