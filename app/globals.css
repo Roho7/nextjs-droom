@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  @apply w-full h-full;
+}
+
+input {
+  @apply border border-gray-300;
+}
