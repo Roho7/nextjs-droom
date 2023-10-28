@@ -1,9 +1,9 @@
 import Link from "next/link";
 import React from "react";
 import { BiChevronLeft, BiPlus } from "react-icons/bi";
-import HotelList from "../components/hotels/HotelTable";
+import HotelTable from "../components/hotels/HotelTable";
 
-const HotelTable = () => {
+const HotelPage = () => {
   return (
     <div className="page-container">
       <div className="flex justify-between">
@@ -15,9 +15,9 @@ const HotelTable = () => {
           <BiPlus /> Add Hotels
         </Link>
       </div>
-      <HotelList />
+      <HotelTable />
     </div>
   );
 };
 
-export default HotelTable;
+export default HotelPage;

@@ -16,6 +16,7 @@ const FormTabs = () => {
       {FormTabData.map((item, index) => {
         return (
           <div
+            key={index}
             className={tab === item ? "tab bg-mango-500" : "tab"}
             onClick={() => handleTabClick(item)}
           >

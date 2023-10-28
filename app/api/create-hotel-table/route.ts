@@ -3,7 +3,8 @@ import { NextResponse } from "next/server";
 
 export async function GET(request: Request) {
   try {
-    const result = await sql`CREATE TABLE NewHotels (hotelName VARCHAR(255),
+    const result =
+      await sql`CREATE TABLE IF NOT EXISTS newhotels (hotelName VARCHAR(255),
   pricePerNight DECIMAL(10, 2),
   roomType1 VARCHAR(255),
   roomType1Price DECIMAL(10, 2),

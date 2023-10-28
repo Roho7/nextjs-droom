@@ -1,14 +1,20 @@
-import axios from "axios";
+import axios, { AxiosError } from "axios";
 import React from "react";
 import HotelCard from "./HotelCard";
 import { HotelDataType } from "../../config/types/types";
 import HotelTableHeading from "./HotelTableHeading";
+import { getHotelUrl } from "../../config/URLs/URL";
 
-export const getData = async () => {
+export const getData = async (): Promise<HotelDataType[] | undefined> => {
   // ===== FETCH HOTEL DETAILS =======
-  const response = await axios.get("http://localhost:3000/api/get-hotel");
-  const data: HotelDataType[] = response.data.hotels.rows;
-  return data;
+  try {
+    const res = await axios.get(getHotelUrl);
+    console.log(res);
+    const data: HotelDataType[] = res.data.hotels.rows;
+    return data;
+  } catch (err) {
+    console.log(err);
+  }
 };
 
 const HotelTable = async () => {
@@ -16,7 +22,7 @@ const HotelTable = async () => {
   return (
     <div className="flex flex-col gap-2 py-4">
       <HotelTableHeading />
-      {data.map((item, index) => {
+      {data?.map((item, index) => {
         return <HotelCard data={item} key={index} />;
       })}
     </div>
