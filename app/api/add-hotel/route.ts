@@ -4,8 +4,7 @@ import { HotelDataType } from "../../config/types/types";
 
 export async function POST(req: Request, res: Response) {
   const body = await req.json();
-  const data: HotelDataType[] = Object.values(body);
-  console.log(data);
+  const data: string | number[] = Object.values(body);
   try {
     await sql`
     INSERT INTO newhotels

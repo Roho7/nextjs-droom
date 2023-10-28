@@ -1,9 +1,9 @@
 import Link from "next/link";
 import React from "react";
-import { BiChevronLeft } from "react-icons/bi";
-import HotelList from "../components/hotels/HotelList";
+import { BiChevronLeft, BiPlus } from "react-icons/bi";
+import HotelList from "../components/hotels/HotelTable";
 
-const Hotels = () => {
+const HotelTable = () => {
   return (
     <div className="page-container">
       <div className="flex justify-between">
@@ -12,7 +12,7 @@ const Hotels = () => {
           <h1>Hotels</h1>
         </div>
         <Link href="/hotels/create-hotels" className="link bg-grass-500">
-          Create Hotels
+          <BiPlus /> Add Hotels
         </Link>
       </div>
       <HotelList />
@@ -20,4 +20,4 @@ const Hotels = () => {
   );
 };
 
-export default Hotels;
+export default HotelTable;

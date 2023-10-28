@@ -11,7 +11,7 @@ export interface SideBarItemType {
 
 export interface HotelDataType {
   hotelname: string;
-  pricePernight: string;
+  pricepernight: string;
   roomtype1: string;
   roomtype1price: string;
   roomtype2: string;

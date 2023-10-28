@@ -13,11 +13,11 @@ input {
 }
 
 button {
-  @apply border-2 border-black px-4 py-2 rounded-md;
+  @apply border-2 border-black p-2 rounded-md text-white;
 }
 
 .link {
-  @apply border-2 border-black px-4 py-2 rounded-md;
+  @apply flex items-center border-2 border-black px-4 py-2 text-white rounded-md hover:drop-shadow-solid;
 }
 
 .page-container {

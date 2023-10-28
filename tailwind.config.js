@@ -10,6 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      dropShadow: {
+        solid: "3px 3px 0px rgba(0, 0, 0, 1)",
+      },
       colors: {
         base: {
           100: "#F0F0F1",
