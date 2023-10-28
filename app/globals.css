@@ -27,3 +27,7 @@ button {
 form {
   @apply flex flex-col;
 }
+
+.tab {
+  @apply p-2 w-full text-center border-r border-black;
+}

@@ -23,3 +23,8 @@ export const HotelFormAtom = atom({
     mapLink: "",
   },
 });
+
+export const HotelTabsAtom = atom({
+  key: "HotelTabs",
+  default: "Basic",
+});

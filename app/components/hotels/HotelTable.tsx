@@ -4,11 +4,15 @@ import HotelCard from "./HotelCard";
 import { HotelDataType } from "../../config/types/types";
 import HotelTableHeading from "./HotelTableHeading";
 
-const HotelTable = async () => {
+export const getData = async () => {
   // ===== FETCH HOTEL DETAILS =======
-  const response = await axios.get("http://localhost:3000/api/add-hotel");
+  const response = await axios.get("http://localhost:3000/api/get-hotel");
   const data: HotelDataType[] = response.data.hotels.rows;
+  return data;
+};
 
+const HotelTable = async () => {
+  const data = await getData();
   return (
     <div className="flex flex-col gap-2 py-4">
       <HotelTableHeading />

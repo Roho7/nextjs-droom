@@ -20,11 +20,3 @@ export async function POST(req: Request, res: Response) {
 
   return NextResponse.json({ status: 200 });
 }
-
-export async function GET(req: Request, res: Response) {
-  const hotels = await sql`
-    SELECT * from newhotels
-  `;
-
-  return NextResponse.json({ hotels }, { status: 200 });
-}
