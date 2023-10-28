@@ -1,82 +1,4 @@
 export const CreateHotelFormData = [
-  // {
-  //   name: "hotelName",
-  //   type: "text",
-  //   placeholder: "Enter Hotel Name",
-  //   label: "Hotel Name",
-  // },
-  // {
-  //   name: "price-per-night",
-  //   type: "text",
-  //   placeholder: "Enter Price/Night",
-  //   label: "Price Per Night",
-  // },
-  // {
-  //   name: "room-type-1",
-  //   type: "text",
-  //   placeholder: "Enter Room Type",
-  //   label: "Room Type",
-  //   incremental: true,
-  // },
-  // {
-  //   name: "room-type-2",
-  //   type: "text",
-  //   placeholder: "Enter Room Type",
-  //   label: "Room Type",
-  //   incremental: true,
-  // },
-  // {
-  //   name: "room-type-3",
-  //   type: "text",
-  //   placeholder: "Enter Room Type",
-  //   label: "Room Type",
-  //   incremental: true,
-  // },
-  // {
-  //   name: "hotel-address",
-  //   type: "text",
-  //   placeholder: "Enter Hotel Address",
-  //   label: "Hotel Address",
-  // },
-  // {
-  //   name: "hotel-mobile",
-  //   type: "text",
-  //   placeholder: "Enter Hotel Mobile",
-  //   label: "Hotel Mobile",
-  // },
-  // {
-  //   name: "description",
-  //   type: "textarea",
-  //   placeholder: "Enter Description",
-  //   label: "Description",
-  // },
-  // {
-  //   name: "nearby-place-1",
-  //   type: "text",
-  //   placeholder: "Enter Nearby Place 1",
-  //   label: "Nearby Place 1",
-  //   incremental: true,
-  // },
-  // {
-  //   name: "nearby-place-2",
-  //   type: "text",
-  //   placeholder: "Enter Nearby Place 2",
-  //   label: "Nearby Place 2",
-  //   incremental: true,
-  // },
-  // {
-  //   name: "nearby-place-3",
-  //   type: "text",
-  //   placeholder: "Enter Nearby Place 3",
-  //   label: "Nearby Place 3",
-  //   incremental: true,
-  // },
-  // {
-  //   name: "map-link",
-  //   type: "text",
-  //   placeholder: "Enter Map Link",
-  //   label: "Map Link",
-  // },
   {
     name: "hotelName",
     type: "text",
@@ -85,7 +7,7 @@ export const CreateHotelFormData = [
   },
   {
     name: "pricePerNight",
-    type: "text",
+    type: "number",
     placeholder: "Enter Price/Night",
     label: "Price Per Night",
   },
@@ -97,7 +19,7 @@ export const CreateHotelFormData = [
   },
   {
     name: "roomType1Price",
-    type: "text",
+    type: "number",
     placeholder: "Enter Room Type Price",
     label: "Room Type Price",
   },
@@ -109,7 +31,7 @@ export const CreateHotelFormData = [
   },
   {
     name: "roomType2Price",
-    type: "text",
+    type: "number",
     placeholder: "Enter Room Type Price",
     label: "Room Type Price",
   },
@@ -121,7 +43,7 @@ export const CreateHotelFormData = [
   },
   {
     name: "roomType3Price",
-    type: "text",
+    type: "number",
     placeholder: "Enter Room Type Price",
     label: "Room Type Price",
   },
@@ -133,7 +55,7 @@ export const CreateHotelFormData = [
   },
   {
     name: "hotelMobile",
-    type: "text",
+    type: "number",
     placeholder: "Enter Hotel Mobile",
     label: "Hotel Mobile",
   },
@@ -151,7 +73,7 @@ export const CreateHotelFormData = [
   },
   {
     name: "nearbyPlace1Dist",
-    type: "text",
+    type: "number",
     placeholder: "Enter Nearby Place 1 Distance",
     label: "Nearby Place 1 Distance",
   },
@@ -163,7 +85,7 @@ export const CreateHotelFormData = [
   },
   {
     name: "nearbyPlace2Dist",
-    type: "text",
+    type: "number",
     placeholder: "Enter Nearby Place 2 Distance",
     label: "Nearby Place 2 Distance",
   },
@@ -175,7 +97,7 @@ export const CreateHotelFormData = [
   },
   {
     name: "nearbyPlace3Dist",
-    type: "text",
+    type: "number",
     placeholder: "Enter Nearby Place 3 Distance",
     label: "Nearby Place 3 Distance",
   },

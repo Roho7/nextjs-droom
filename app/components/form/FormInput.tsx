@@ -7,7 +7,6 @@ import { HotelFormAtom } from "../../config/atoms/hotel-atoms";
 const FormInput = ({ name, placeholder, label, type, incremental }: any) => {
   const hotelData = useRecoilValue(HotelFormAtom);
   const setHotelData = useSetRecoilState(HotelFormAtom);
-  //   const [value, setValue] = useState(0);
 
   const handleChange = (e: any) => {
     setHotelData({ ...hotelData, [e.target.name]: e.target.value });

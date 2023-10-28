@@ -1,4 +1,4 @@
-import { SideBarData } from "../../config/sitedata";
+import { SideBarData } from "../../config/JSON/sitedata";
 import SidebarItem from "./SidebarItem";
 
 const Sidebar = () => {

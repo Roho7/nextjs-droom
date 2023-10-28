@@ -1,6 +1,6 @@
 "use client";
 import { BiChevronDown } from "react-icons/bi";
-import { SideBarItemType } from "../../config/types";
+import { SideBarItemType } from "../../config/types/types";
 import Link from "next/link";
 
 const SidebarItem = (props: any) => {

@@ -5,7 +5,9 @@
 :root {
   @apply w-full h-full bg-base-100;
 }
-
+h1 {
+  @apply text-2xl;
+}
 input {
   @apply p-2 rounded-md mb-2 w-full border-2 border-black;
 }

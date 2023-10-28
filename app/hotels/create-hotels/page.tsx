@@ -1,6 +1,6 @@
 "use client";
 import FormInput from "../../components/form/FormInput";
-import { CreateHotelFormData } from "../../config/create-hotel-form";
+import { CreateHotelFormData } from "../../config/JSON/create-hotel-form";
 import { useRecoilValue } from "recoil";
 import { HotelFormAtom } from "../../config/atoms/hotel-atoms";
 import axios from "axios";
@@ -16,7 +16,6 @@ const CreateHotel = () => {
         "http://localhost:3000/api/add-hotel",
         hotelData,
       );
-      console.log(response.data);
       return NextResponse.json(response.data);
     } catch (error: any) {
       console.log(error);
